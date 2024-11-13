@@ -1,6 +1,6 @@
 # lefthook-configs
 
-Lefthook git hook configs
+[Lefthook](https://github.com/evilmartians/lefthook) git hook configs
 
 ## Usage
 
