@@ -4,7 +4,7 @@
 
 ## Usage
 
-Available LANG configs:
+Available configs:
 
 - [deno](./lefthook-deno.yml)
 - [golang](./lefthook-golang.yml)
