@@ -1,0 +1,10 @@
+pre-commit:
+  parallel: true
+  commands:
+    fmt:
+      run: deno fmt {staged_files}
+      staged_fixed: true
+    lint:
+      run: deno lint
+    test:
+      run: deno test

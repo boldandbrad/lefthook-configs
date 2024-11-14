@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: ruff check --fix
+      stage_fixed: true
+    fmt:
+      run: ruff format
+      stage_fixed: true

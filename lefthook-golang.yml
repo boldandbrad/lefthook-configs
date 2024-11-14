@@ -1,9 +1,13 @@
 pre-commit:
   parallel: true
-  scripts:
-    "go-fmt":
+  commands:
+    fmt:
       glob: "*.go"
-      run: go fmt ${LEFTHOOK_GIT_STAGED}
-    "go-vet":
+      run: go fmt {staged_files}
+      stage_fixed: true
+    vet:
       glob: "*.go"
       run: go vet ./...
+    test:
+      glob: "*.go"
+      run: go test ./...
