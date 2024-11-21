@@ -2,6 +2,7 @@ pre-commit:
   parallel: true
   commands:
     fmt:
+      glob: "*.{js,ts,jsx,tsx,md,css,html,json,yml,yaml}"
       run: deno fmt {staged_files}
       staged_fixed: true
     lint:
